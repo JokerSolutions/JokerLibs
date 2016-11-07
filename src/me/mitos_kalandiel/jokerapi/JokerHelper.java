@@ -26,7 +26,7 @@ public class JokerHelper implements IJokerHelper {
      * @return Integer with the addition result
      */
     @Override
-    public int addNums(int Num1, int Num2) {
+    public int addNumbers(int Num1, int Num2) {
         return Num1 + Num2;
     }
 
@@ -38,7 +38,7 @@ public class JokerHelper implements IJokerHelper {
      * @return Integer with the subtraction result
      */
     @Override
-    public int subNums(int Num1, int Num2) {
+    public int subNumbers(int Num1, int Num2) {
         return Num1 - Num2;
     }
 
@@ -50,7 +50,7 @@ public class JokerHelper implements IJokerHelper {
      * @return Integer with the multiplication result
      */
     @Override
-    public int mulNums(int Num1, int Num2) {
+    public int mulNumbers(int Num1, int Num2) {
         return Num1 * Num2;
     }
 
@@ -62,7 +62,7 @@ public class JokerHelper implements IJokerHelper {
      * @return Integer with the division result
      */
     @Override
-    public int divNums(int Num1, int Num2) {
+    public int divNumbers(int Num1, int Num2) {
         return Num1 / Num2;
     }
 
@@ -74,7 +74,7 @@ public class JokerHelper implements IJokerHelper {
      * @return Double with the addition result
      */
     @Override
-    public double addNums(double Num1, double Num2) {
+    public double addNumbers(double Num1, double Num2) {
         return Num1 + Num2;
     }
 
@@ -86,7 +86,7 @@ public class JokerHelper implements IJokerHelper {
      * @return Double with the subtraction result
      */
     @Override
-    public double subNums(double Num1, double Num2) {
+    public double subNumbers(double Num1, double Num2) {
         return Num1 - Num2;
     }
 
@@ -98,7 +98,7 @@ public class JokerHelper implements IJokerHelper {
      * @return Double with the multiplication result
      */
     @Override
-    public double mulNums(double Num1, double Num2) {
+    public double mulNumbers(double Num1, double Num2) {
         return Num1 * Num2;
     }
 
@@ -110,7 +110,7 @@ public class JokerHelper implements IJokerHelper {
      * @return Double with the division result
      */
     @Override
-    public double divNums(double Num1, double Num2) {
+    public double divNumbers(double Num1, double Num2) {
         return Num1 / Num2;
     }
 }

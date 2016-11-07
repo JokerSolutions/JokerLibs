@@ -18,7 +18,7 @@ import java.util.Random;
  *   You should have received a copy of the GNU General Public License
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class PasswordGenerator {
+class PasswordGenerator {
 
     static char[] generatePassword(int length) {
         String charsCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
