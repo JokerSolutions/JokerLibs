@@ -1,4 +1,4 @@
-package me.mitos_kalandiel.utils;
+package me.mitos_kalandiel.jokerapi;
 
 import java.util.Random;
 
