@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_mylibraries" default="compile.module.mylibraries">
+  <dirname property="module.mylibraries.basedir" file="${ant.file.module_mylibraries}"/>
+  
+  <property name="module.jdk.home.mylibraries" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.mylibraries" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.mylibraries" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.mylibraries" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="mylibraries.output.dir" value="${module.mylibraries.basedir}/out/production/myLibraries"/>
+  <property name="mylibraries.testoutput.dir" value="${module.mylibraries.basedir}/out/test/myLibraries"/>
+  
+  <path id="mylibraries.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="mylibraries.module.production.classpath">
+    <path refid="${module.jdk.classpath.mylibraries}"/>
+  </path>
+  
+  <path id="mylibraries.runtime.production.module.classpath">
+    <pathelement location="${mylibraries.output.dir}"/>
+  </path>
+  
+  <path id="mylibraries.module.classpath">
+    <path refid="${module.jdk.classpath.mylibraries}"/>
+    <pathelement location="${mylibraries.output.dir}"/>
+  </path>
+  
+  <path id="mylibraries.runtime.module.classpath">
+    <pathelement location="${mylibraries.testoutput.dir}"/>
+    <pathelement location="${mylibraries.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.mylibraries">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.mylibraries">
+    <patternset refid="excluded.from.module.mylibraries"/>
+  </patternset>
+  
+  <path id="mylibraries.module.sourcepath">
+    <dirset dir="${module.mylibraries.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.mylibraries" depends="compile.module.mylibraries.production,compile.module.mylibraries.tests" description="Compile module myLibraries"/>
+  
+  <target name="compile.module.mylibraries.production" description="Compile module myLibraries; production classes">
+    <mkdir dir="${mylibraries.output.dir}"/>
+    <javac destdir="${mylibraries.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.mylibraries}/javac">
+      <compilerarg line="${compiler.args.mylibraries}"/>
+      <bootclasspath refid="mylibraries.module.bootclasspath"/>
+      <classpath refid="mylibraries.module.production.classpath"/>
+      <src refid="mylibraries.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.mylibraries"/>
+    </javac>
+    
+    <copy todir="${mylibraries.output.dir}">
+      <fileset dir="${module.mylibraries.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.mylibraries.tests" depends="compile.module.mylibraries.production" description="compile module myLibraries; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.mylibraries" description="cleanup module">
+    <delete dir="${mylibraries.output.dir}"/>
+    <delete dir="${mylibraries.testoutput.dir}"/>
+  </target>
+</project>
