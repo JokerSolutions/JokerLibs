@@ -1,7 +1,7 @@
 package me.mitos_kalandiel.jokerapi;
 
 /**
- * Copyright (C) 2016 by smzb
+ * Copyright (C) 2016 by smzb (mitoskalandiel(at)gmail.com)
  * <p>
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
