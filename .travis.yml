@@ -1,15 +1,21 @@
-#language: java
-#install: ant deps
-#group: stable
-#dist: precise
-#os: linux
-#sudo: false
-#addons:
-#  apt:
-#    packages:
-#      - oracle-java8-installer
-#script:
-#  - jdk_switcher use oraclejdk8
 language: java
 jdk:
   - oraclejdk8
+before_deploy:
+  - git config --global user.email "builds@travis-ci.com"
+  - git config --global user.name "Travis CI"
+  - export GIT_TAG=$TRAVIS_BRANCH-v0.1.$TRAVIS_BUILD_NUMBER
+  - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
+  - git push -q https://e5294170b51b1e259503a12694743a3efbb84cc4@github.com/mitoskalandiel/JokerLibs --tags
+deploy:
+  provider: releases
+  api_key: "e5294170b51b1e259503a12694743a3efbb84cc4"
+  file: "dist/JokerLibs.jar"
+  skip_cleanup: true
+  on:
+    tags: false
+    all_branches: true
+branches:
+  except:
+    - /^*-v[0-9]/    
+    
