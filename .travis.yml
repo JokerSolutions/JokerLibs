@@ -1,12 +1,17 @@
-language: java
+#language: java
 #install: ant deps
-group: stable
-dist: precise
-os: linux
-sudo: false
-addons:
-  apt:
-    packages:
-      - oracle-java8-installer
-script:
-  - jdk_switcher use oraclejdk8
+#group: stable
+#dist: precise
+#os: linux
+#sudo: false
+#addons:
+#  apt:
+#    packages:
+#      - oracle-java8-installer
+#script:
+#  - jdk_switcher use oraclejdk8
+language: java
+jdk:
+  - oraclejdk8
+  - oraclejdk7
+  - openjdk7
