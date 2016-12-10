@@ -22,6 +22,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
 
 /**
  *
@@ -62,11 +63,11 @@ public class JokerHelperTest {
      */
     @Test
     public void testAddNumbers_int_int() {
-        System.out.println("addNumbers");
+        System.out.println("Test:addNumbers(int)");
         JokerHelper instance = new JokerHelper();
-        int expResult = 11;
+        int expected = 11;
         int result = instance.addNumbers(IntNum1, IntNum2);
-        assertEquals(expResult, result);
+        assertThat(expected, is(equalTo(result)));
     }
 
     /**
@@ -74,11 +75,11 @@ public class JokerHelperTest {
      */
     @Test
     public void testSubNumbers_int_int() {
-        System.out.println("subNumbers");
+        System.out.println("Test:subNumbers(int)");
         JokerHelper instance = new JokerHelper();
-        int expResult = -1;
+        int expected = -1;
         int result = instance.subNumbers(IntNum1, IntNum2);
-        assertEquals(expResult, result);
+        assertThat(expected, is(equalTo(result)));
     }
 
     /**
@@ -86,11 +87,11 @@ public class JokerHelperTest {
      */
     @Test
     public void testMulNumbers_int_int() {
-        System.out.println("mulNumbers");
+        System.out.println("Test:mulNumbers(int)");
         JokerHelper instance = new JokerHelper();
-        int expResult = 30;
+        int expected = 30;
         int result = instance.mulNumbers(IntNum1, IntNum2);
-        assertEquals(expResult, result);
+        assertThat(expected, is(equalTo(result)));
     }
 
     /**
@@ -99,13 +100,13 @@ public class JokerHelperTest {
      */
     @Test
     public void testDivNumbers_int_int() {
-        System.out.println("divNumbers");
+        System.out.println("Test:divNumbers(int)");
         int Num1 = 0;
         int Num2 = 1;
         JokerHelper instance = new JokerHelper();
-        int expResult = 0;
+        int expected = 0;
         int result = instance.divNumbers(Num1, Num2);
-        assertEquals(expResult, result);
+        assertThat(expected, is(equalTo(result)));
     }
 
     /**
@@ -113,11 +114,11 @@ public class JokerHelperTest {
      */
     @Test
     public void testAddNumbers_double_double() {
-        System.out.println("addNumbers");
+        System.out.println("Test:addNumbers(double)");
         JokerHelper instance = new JokerHelper();
-        double expResult = 7.3;
+        double expected = 7.3;
         double result = instance.addNumbers(DblNum1, DblNum2);
-        assertEquals(expResult, result, 0.0);
+        assertThat(expected, is(equalTo(result)));
     }
 
     /**
@@ -125,11 +126,11 @@ public class JokerHelperTest {
      */
     @Test
     public void testSubNumbers_double_double() {
-        System.out.println("subNumbers");
+        System.out.println("Test:subNumbers(double)");
         JokerHelper instance = new JokerHelper();
-        double expResult = 3.3;
+        double expected = 3.3;
         double result = instance.subNumbers(DblNum1, DblNum2);
-        assertEquals(expResult, result, 0.0);
+        assertThat(expected, is(equalTo(result)));
     }
 
     /**
@@ -137,11 +138,11 @@ public class JokerHelperTest {
      */
     @Test
     public void testMulNumbers_double_double() {
-        System.out.println("mulNumbers");
+        System.out.println("Test:mulNumbers(double)");
         JokerHelper instance = new JokerHelper();
-        double expResult = 10.6;
+        double expected = 10.6;
         double result = instance.mulNumbers(DblNum1, DblNum2);
-        assertEquals(expResult, result, 0.0);
+        assertThat(expected, is(equalTo(result)));
     }
 
     /**
@@ -149,11 +150,11 @@ public class JokerHelperTest {
      */
     @Test
     public void testDivNumbers_double_double() {
-        System.out.println("divNumbers");
+        System.out.println("Test:divNumbers(double)");
         JokerHelper instance = new JokerHelper();
-        double expResult = 2.65;
+        double expected = 2.65;
         double result = instance.divNumbers(DblNum1, DblNum2);
-        assertEquals(expResult, result, 0.0);
+        assertThat(expected, is(equalTo(result)));
     }
     
 }
