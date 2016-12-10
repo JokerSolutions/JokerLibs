@@ -6,7 +6,7 @@ before_deploy:
   - git config --global user.name "Travis CI"
   - export GIT_TAG=$TRAVIS_BRANCH-0.1.$TRAVIS_BUILD_NUMBER
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-  - git push -q https://$TAGPERM@github.com/mitoskalandiel/JokerLibs --tags
+  - git push -q https://mitoskalandiel:e5294170b51b1e259503a12694743a3efbb84cc4@github.com/mitoskalandiel/JokerLibs --tags
   - ls -R
 deploy:
   provider: releases
