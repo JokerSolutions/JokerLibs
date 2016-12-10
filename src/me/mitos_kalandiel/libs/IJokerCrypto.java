@@ -17,7 +17,7 @@
 package me.mitos_kalandiel.libs;
 
 /**
- *
+ * This Interface defines what functions will be made available.
  * @author smzb
  */
 public interface IJokerCrypto {
