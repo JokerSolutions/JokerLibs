@@ -5,23 +5,16 @@ script: ant jar test
 env:
   global:
     secure: Tgafh8T+eP3DVyWJbyvAhwliQFL0R5zT5F6V6qviDlFdA7Xohwg/lssUMNf18KkwScuHVkmpXsirAYX4QkwgHbkdXQYxR5BscwSUVHioqP2HRphij8Y5KkN+ToW1hiiHCl8PLyyM4Dada/1XrUfPUq0LFttGV3gVzEWKSCMzBDPmeTQgNyURyhDbmMOjdz5hCx33ijW4F0qPlnNvdvwbS960t1SqHoAmeJwEHnAZHOTrwyxOEpeTiCKApmUOR3Lv/9wceTTxz4nx9LCP4p3wKaMLH93Vy5Ol6cA/mEQv90pTGDCmX5uGsTx0zYl481xreGCZu7FTYDE7CIXQDqWT1zhgTAyK2w2MgRGKSczxi2Z7e3iS0KxeUjUz27Gf4R946SKbzN9cInMID1FpmlSVuQlcAXq+7Om3m7YI187Dz6TYlq3ggbUpM7e+4onEF5lvMmXQ3V9K8Lvg49bxOGNI7FrOKi9jxMlAMmapQRY6l2aW94AsUub1/ilzPBJSl5WE46HPY1163K9H5rlUSwEuv6o9T99EzqSY/5tYZAi8rCl80bj2kCljE9HU2bV8JMf+LbpdEIK7nQfL3klvJQwRwf7j2hO1JjDrs80SDXMnxHCDMx80qlkWF8SiXDPiYwl1tPR6DLLT5a8Wp2G7KHKDbbocKo+22EKm755s8UYFwJg=
-after_success:
-- pwd
-- ls -la
-- find . -print | grep -i '.*[.]jar'
-- cd ~
-- pwd
-- ls -la
-- find . -print | grep -i '.*[.]jar'
-#deploy:
-#  provider: releases
-#  skip_cleanup: true
-#  api_key:
-#    secure: Awl994P4STOPDA0lJoBn+645dcz3HkSQ2knIni6MW6zH+FqHVv0PUYkw0eiYQVE1WhJH9dFocnTNXPlvaTUjZExqUaoqfocSyfH9bqCxanzxZQWpwalzYdsnXvsfE39qeKf+WL3oml6z3riz0zbtzJaRh8MkpBwc6N24CQewtygo46FSiYOy6JyRbgPrhjb70l3zRhv11p/yCPPrc6kklnKKtMFwz08Lntl3AfiEKzWC2ym5Teotsiwf0jwCsa8FLHxABHoy3aefH7SEldGnm6/pkWDcyEv6No37oClFUATvIYNpgQDvLnk7U5vDNuimsABnJkI+/C+Kt9NXA81wD2vqWaJy8UM84vW3urOtDKdpl6eStE3I/7DJ7jQtrFv15HHyek4eoc4saVNwaBTcNYIUCLrbfXFm4gg2EXQJUEOMLzqRWJ3J8GUAaGxhtXOCtmvfP1mmZ+NdEYiDfj7z22vqBW1JKmmdn/D89MsUsN6cCjo+J8miAZBwuiNwi6haJMSNWsaI656gYaXSbzbZadpRbflQKLywrU/M6Zn6j1CBGGj4t7ly820WwLMEHbnMH93T6K/KDmCGeHaRBWoGqFMWGEZJCEpgw23ZqPhOMDwM3D+c7PR8wAHkQkyo88f/z3wZCBOtrYb7QaBuAMN9jXaK9Sf5YxEl6/cUc5r9ndU=
-#  file: 
-#  - "dist/JokerLibs.jar"
-#  on:
-#    repo: mitoskalandiel/JokerLibs
-#branches:
-#  except:
-#  - "/^*-v[0-9]/"
+#after_success:
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: Awl994P4STOPDA0lJoBn+645dcz3HkSQ2knIni6MW6zH+FqHVv0PUYkw0eiYQVE1WhJH9dFocnTNXPlvaTUjZExqUaoqfocSyfH9bqCxanzxZQWpwalzYdsnXvsfE39qeKf+WL3oml6z3riz0zbtzJaRh8MkpBwc6N24CQewtygo46FSiYOy6JyRbgPrhjb70l3zRhv11p/yCPPrc6kklnKKtMFwz08Lntl3AfiEKzWC2ym5Teotsiwf0jwCsa8FLHxABHoy3aefH7SEldGnm6/pkWDcyEv6No37oClFUATvIYNpgQDvLnk7U5vDNuimsABnJkI+/C+Kt9NXA81wD2vqWaJy8UM84vW3urOtDKdpl6eStE3I/7DJ7jQtrFv15HHyek4eoc4saVNwaBTcNYIUCLrbfXFm4gg2EXQJUEOMLzqRWJ3J8GUAaGxhtXOCtmvfP1mmZ+NdEYiDfj7z22vqBW1JKmmdn/D89MsUsN6cCjo+J8miAZBwuiNwi6haJMSNWsaI656gYaXSbzbZadpRbflQKLywrU/M6Zn6j1CBGGj4t7ly820WwLMEHbnMH93T6K/KDmCGeHaRBWoGqFMWGEZJCEpgw23ZqPhOMDwM3D+c7PR8wAHkQkyo88f/z3wZCBOtrYb7QaBuAMN9jXaK9Sf5YxEl6/cUc5r9ndU=
+  file: 
+  - "dist/JokerLibs.jar"
+  on:
+    repo: mitoskalandiel/JokerLibs
+branches:
+  except:
+  - "/^*-v[0-9]/"
