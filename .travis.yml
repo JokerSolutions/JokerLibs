@@ -1,5 +1,5 @@
 language: java
-install: ant deps
+install: ant
 group: stable
 dist: precise
 os: linux
