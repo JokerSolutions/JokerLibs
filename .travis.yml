@@ -1,9 +1,9 @@
 language: java
-install: ant deps,
-group: stable,
-dist: precise,
-os: linux,
-sudo: false,
+install: ant deps
+group: stable
+dist: precise
+os: linux
+sudo: false
 addons:
   apt:
     packages:
