@@ -128,7 +128,7 @@ public class JokerHelperTest {
     public void testSubNumbers_double_double() {
         System.out.println("Test:subNumbers(double)");
         JokerHelper instance = new JokerHelper();
-        double expected = 3.2;
+        double expected = 3.3;
         double result = instance.subNumbers(DblNum1, DblNum2);
         assertThat(expected, is(equalTo(result)));
     }
