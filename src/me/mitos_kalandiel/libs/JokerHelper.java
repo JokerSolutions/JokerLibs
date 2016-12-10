@@ -64,6 +64,7 @@ public class JokerHelper implements IJokerHelper {
      * @param Num1 Integer 1
      * @param Num2 Integer 2
      * @return Integer with the division result
+     * @todo We somehow have to make sure we can't divide by 0
      */
     @Override
     public int divNumbers(int Num1, int Num2) {
@@ -112,6 +113,7 @@ public class JokerHelper implements IJokerHelper {
      * @param Num1 Double 1
      * @param Num2 Double 2
      * @return Double with the division result
+     * @todo We somehow have to make sure we can't divide by 0
      */
     @Override
     public double divNumbers(double Num1, double Num2) {

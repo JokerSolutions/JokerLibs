@@ -22,7 +22,7 @@ import java.util.Random;
  *
  * @author smzb
  */
-public class JokerCrypto {
+public class JokerCrypto implements IJokerCrypto {
     
     static char[] generatePassword(int length) {
         String charsCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
