@@ -7,6 +7,11 @@ env:
 after_success:
 - pwd
 - ls -la
+- find . -print | grep -i '.*[.]jar'
+- cd ~
+- pwd
+- ls -la
+- find . -print | grep -i '.*[.]jar'
 #deploy:
 #  provider: releases
 #  skip_cleanup: true
