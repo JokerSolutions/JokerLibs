@@ -21,5 +21,5 @@ package me.mitos_kalandiel.libs;
  * @author smzb
  */
 public interface IJokerCrypto {
-    
+
 }
