@@ -14,6 +14,7 @@ after_success:
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
 - git push -q https://${GH_TOKEN}@github.com/mitoskalandiel/JokerLibs.git --tags
 - ls -R
+- printenv
 deploy:
   provider: releases
   skip_cleanup: true
