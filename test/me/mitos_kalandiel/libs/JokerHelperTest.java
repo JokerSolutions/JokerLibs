@@ -157,4 +157,20 @@ public class JokerHelperTest {
         assertThat(expected, is(equalTo(result)));
     }
     
+    @Test(expected=java.lang.ArithmeticException.class)
+    public void testDivideByZero_int_int() {
+        System.out.println("Test:divByZero(int)");
+        JokerHelper instance = new JokerHelper();
+        double result = instance.divNumbers(IntNum1, 0);
+    }
+    
+    @Test
+    public void testDivideByZero_double_double() {
+        System.out.println("Test:divByZero(double)");
+        JokerHelper instance = new JokerHelper();
+        double expected = Double.NaN;
+        double result = instance.divNumbers(DblNum1, 0);
+        assertThat(expected, is(equalTo(result)));
+    }
+
 }
