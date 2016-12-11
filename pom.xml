@@ -270,7 +270,7 @@
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>${maven.javadoc.version}</version>
           <configuration>
-            <sourcepath>${project.basedir}/src/main/java</sourcepath>
+            <sourcepath>${project.basedir}/src/me/mitos_kalandiel/libs</sourcepath>
           </configuration>
         </plugin>
       </plugins>

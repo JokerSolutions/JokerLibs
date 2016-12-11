@@ -7,9 +7,9 @@
             <file>file:/home/smzb/NetBeansProjects/JokerLibs/src/me/mitos_kalandiel/libs/JokerCrypto.java</file>
             <file>file:/home/smzb/NetBeansProjects/JokerLibs/test/me/mitos_kalandiel/libs/JokerHelperTest.java</file>
             <file>file:/home/smzb/NetBeansProjects/JokerLibs/.travis.yml</file>
-            <file>file:/home/smzb/NetBeansProjects/JokerLibs/src/me/mitos_kalandiel/libs/IJokerHelper.java</file>
-            <file>file:/home/smzb/NetBeansProjects/JokerLibs/src/me/mitos_kalandiel/libs/IJokerCrypto.java</file>
             <file>file:/home/smzb/NetBeansProjects/JokerLibs/src/me/mitos_kalandiel/libs/JokerHelper.java</file>
+            <file>file:/home/smzb/NetBeansProjects/JokerLibs/pom.xml</file>
+            <file>file:/home/smzb/NetBeansProjects/JokerLibs/.coveralls.yml</file>
         </group>
     </open-files>
 </project-private>
