@@ -10,7 +10,7 @@ script: ant test
 after_success:
   - mvn jacoco:report coveralls:jacoco
 script: ant jar
-## GH_TOKEN=[redacted]
+## GH_TOKEN=[encrypted github oauth token]
 #env:
 #  global:
 #    secure: XpArBRq0bKup5UYe7cOLqBSK4iXkG6p5YMNNBVIWjxHXiRuBxdFu4eXCu03scIzoe/GyXD65grSsZevAekK0lJZAd0/T62n0hfuWxw/NWHD+lbJRuGxNbwcqTvihLs8Np4Cicj7S+aWMZLdUc7eTrvx/nrs13PGUvHwn0eBo/GPrGYD3Jh/zaDG9c4w920tkq8u9telyl5sTF4ElrY2aneQbqRxs7zLLnDtLc+wdvNtfeAdGVD74mRzUSsWP+FFGea4nqA1A7qaXKSvIpdo3ympxZNCTBu3jMAGPSDk7CRnJOZYlLcNqqpeWdsCvPRst4Y57dPhstzv5KicDMuicZHUJddeXCFqtxYxvhj1rvsAud8L79KYDEC+Dux4qvW2uu5B79JwROTJlHdcC7FckikOHcp8KgHXJuwQbtboPemZ22dZvgK+TJKcp/tvvgGScZkJ9jPBwhRjFllblz6X2nRx8UNcHtrIwIP5PnYI1t95yGYlImVuzdv6uWW8uQxCvePCTBPHsBLnRvsT03MBAnbk1I9GiqHZntVWnxQcbcSXzl8gTpgEhSs/PiOimRyaP/WG7+rEOPXZ/n/VdfwvoN4a4p/KVb2mo3WbiLNxtrHYjJoN3+4V/3/nRRI4c6CvS9yHnMqQQ99ZAlKSnMVUpW30y3y6WL7I8tTw3aNr5+38=
