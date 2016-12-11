@@ -168,7 +168,7 @@ public class JokerHelperTest {
     public void testDivideByZero_double_double() {
         System.out.println("Test:divByZero(double)");
         JokerHelper instance = new JokerHelper();
-        double expected = Double.NaN;
+        double expected = Double.POSITIVE_INFINITY;
         double result = instance.divNumbers(DblNum1, 0);
         assertThat(expected, is(equalTo(result)));
     }
