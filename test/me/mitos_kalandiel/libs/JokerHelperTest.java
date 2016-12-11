@@ -35,17 +35,29 @@ public class JokerHelperTest {
     private double DblNum1;
     private double DblNum2;
     
+    /**
+     *
+     */
     public JokerHelperTest() {
     }
     
+    /**
+     *
+     */
     @BeforeClass
     public static void setUpClass() {
     }
     
+    /**
+     *
+     */
     @AfterClass
     public static void tearDownClass() {
     }
     
+    /**
+     *
+     */
     @Before
     public void setUp() {
         IntNum1 = 5;
@@ -54,6 +66,9 @@ public class JokerHelperTest {
         DblNum2 = 2;
     }
     
+    /**
+     *
+     */
     @After
     public void tearDown() {
     }
@@ -157,6 +172,9 @@ public class JokerHelperTest {
         assertThat(expected, is(equalTo(result)));
     }
     
+    /**
+     *
+     */
     @Test(expected=java.lang.ArithmeticException.class)
     public void testDivideByZero_int_int() {
         System.out.println("Test:divByZero(int)");
@@ -164,6 +182,9 @@ public class JokerHelperTest {
         double result = instance.divNumbers(IntNum1, 0);
     }
     
+    /**
+     *
+     */
     @Test
     public void testDivideByZero_double_double() {
         System.out.println("Test:divByZero(double)");
