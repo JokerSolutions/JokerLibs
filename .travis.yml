@@ -8,7 +8,7 @@ matrix:
   - jdk: oraclejdk8
 script: ant test javadoc jar
 after_success:
-  - mvn clean org.eluder.coveralls:coveralls-maven-plugin:report
+  - mvn -e clean org.eluder.coveralls:coveralls-maven-plugin:report
 ## GH_TOKEN=[encrypted github oauth token]
 #env:
 #  global:
