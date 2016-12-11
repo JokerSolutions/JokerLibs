@@ -14,7 +14,7 @@ after_success:
   - find . -name "*.xml"
   - echo "Finding JAR files"
   - find . -name "*.jar"
-  - echo $project.basedir
+  - printenv
 ## GH_TOKEN=[encrypted github oauth token]
 #env:
 #  global:
