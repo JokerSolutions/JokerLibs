@@ -11,10 +11,10 @@ after_success:
   - mvn -X -e clean org.eluder.coveralls:coveralls-maven-plugin:report
   - ls -R
   - echo "Finding XML files"
-  - find . -name ".xml"
+  - find . -name "*.xml"
   - echo "Finding JAR files"
-  - find . -name ".jar"
-  - echo ${project.basedir}
+  - find . -name "*.jar"
+  - echo $project.basedir
 ## GH_TOKEN=[encrypted github oauth token]
 #env:
 #  global:
