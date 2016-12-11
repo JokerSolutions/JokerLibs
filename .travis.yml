@@ -6,10 +6,9 @@ addons:
 matrix:
   include:
   - jdk: oraclejdk8
-script: ant test javadoc
+script: ant test javadoc jar
 after_success:
-  - mvn jacoco:report coveralls:jacoco
-script: ant jar
+  - mvn clean org.eluder.coveralls:coveralls-maven-plugin:report
 ## GH_TOKEN=[encrypted github oauth token]
 #env:
 #  global:
@@ -28,8 +27,8 @@ deploy:
   file:
   - dist/JokerLibs.jar
   on:
-    tags: true
-#    all_branches: true
-#branches:
-#  except:
-#  - "/^*-v[0-9]/"
+    tags: false
+    all_branches: true
+branches:
+  except:
+  - "/^*-v[0-9]/"
