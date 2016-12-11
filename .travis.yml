@@ -2,7 +2,7 @@ language: java
 install: true
 addons:
   code_climate: 
-  repo_token: a4f10636fe11cc70f2e038e4df18abe64b17f1f9609a09b86ee2a7c877ef2a36
+    repo_token: a4f10636fe11cc70f2e038e4df18abe64b17f1f9609a09b86ee2a7c877ef2a36
 matrix:
   include:
   - jdk: oraclejdk8
