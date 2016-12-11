@@ -1,13 +1,32 @@
-<plugin>
-    <groupId>org.jacoco</groupId>
-    <artifactId>jacoco-maven-plugin</artifactId>
-    <version>1.5.3.20160222.2125</version>
-    <executions>
-        <execution>
-            <id>prepare-agent</id>
-            <goals>
-                <goal>prepare-agent</goal>
-            </goals>
-        </execution>
-    </executions>
-</plugin>
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="JokerLibs" groupId="me.mitos_kalandiel.libs" default="all" basedir=".">
+    <groupId>me.mitos_kalandiel.libs</groupId>
+    <artifactId>JokerLibs</artifactId>
+    <version>v1</version>
+    <modelVersion>4.0.0</modelVersion>
+    <target name="all">
+        <!-- TODO define script. See Help menu or http://ant.apache.org/ -->
+        <plugin>
+            <groupId>org.eluder.coveralls</groupId>
+            <artifactId>coveralls-maven-plugin</artifactId>
+            <version>4.3.0</version>
+            <configuration>
+                <!--<repoToken>x6C0yKPmaCgkw5BUX5HeSHENtUwcMf9Lui1pl</repoToken> -->
+                <repoToken>Gcdctz0PZ93cHS2OmM3Fs8S9uisQ1FvCT</repoToken>
+            </configuration>
+        </plugin>
+        <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>1.5.3.20160222.2125</version>
+            <executions>
+                <execution>
+                    <id>prepare-agent</id>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </target>
+</project>

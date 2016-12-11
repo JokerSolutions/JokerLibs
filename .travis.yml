@@ -6,7 +6,7 @@ addons:
 matrix:
   include:
   - jdk: oraclejdk8
-script: ant test
+script: ant test javadoc
 after_success:
   - mvn jacoco:report coveralls:jacoco
 script: ant jar
