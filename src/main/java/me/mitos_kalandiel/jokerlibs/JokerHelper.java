@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>JokerHelper.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;JokerLibs&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">me.mitos_kalandiel.libs</a> &gt; <span class="el_source">JokerHelper.java</span></div><h1>JokerHelper.java</h1><pre class="source lang-java linenums">/*
+/*
  * Copyright (C) 2016 smzb
  *
  * This program is free software: you can redistribute it and/or modify
@@ -12,15 +12,16 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package me.mitos_kalandiel.libs;
+
+package me.mitos_kalandiel.jokerlibs;
 
 /**
  *
  * @author smzb
  */
-<span class="fc" id="L23">public class JokerHelper implements IJokerHelper {</span>
+public class JokerHelper implements IJokerHelper {
 
     /**
      * Add two INT numbers somehow
@@ -31,7 +32,7 @@ package me.mitos_kalandiel.libs;
      */
     @Override
     public int addNumbers(int Num1, int Num2) {
-<span class="fc" id="L34">        return Num1 + Num2;</span>
+        return Num1 + Num2;
     }
 
     /**
@@ -43,7 +44,7 @@ package me.mitos_kalandiel.libs;
      */
     @Override
     public int subNumbers(int Num1, int Num2) {
-<span class="fc" id="L46">        return Num1 - Num2;</span>
+        return Num1 - Num2;
     }
 
     /**
@@ -55,7 +56,7 @@ package me.mitos_kalandiel.libs;
      */
     @Override
     public int mulNumbers(int Num1, int Num2) {
-<span class="fc" id="L58">        return Num1 * Num2;</span>
+        return Num1 * Num2;
     }
 
     /**
@@ -68,7 +69,7 @@ package me.mitos_kalandiel.libs;
      */
     @Override
     public int divNumbers(int Num1, int Num2) {
-<span class="fc" id="L71">        return Num1 / Num2;</span>
+        return Num1 / Num2;
     }
 
     /**
@@ -80,7 +81,7 @@ package me.mitos_kalandiel.libs;
      */
     @Override
     public double addNumbers(double Num1, double Num2) {
-<span class="fc" id="L83">        return Num1 + Num2;</span>
+        return Num1 + Num2;
     }
 
     /**
@@ -92,7 +93,7 @@ package me.mitos_kalandiel.libs;
      */
     @Override
     public double subNumbers(double Num1, double Num2) {
-<span class="fc" id="L95">        return Num1 - Num2;</span>
+        return Num1 - Num2;
     }
 
     /**
@@ -104,7 +105,7 @@ package me.mitos_kalandiel.libs;
      */
     @Override
     public double mulNumbers(double Num1, double Num2) {
-<span class="fc" id="L107">        return Num1 * Num2;</span>
+        return Num1 * Num2;
     }
 
     /**
@@ -117,7 +118,6 @@ package me.mitos_kalandiel.libs;
      */
     @Override
     public double divNumbers(double Num1, double Num2) {
-<span class="fc" id="L120">        return Num1 / Num2;</span>
+        return Num1 / Num2;
     }
 }
-</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>

@@ -14,109 +14,68 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package me.mitos_kalandiel.libs;
+
+package me.mitos_kalandiel.jokerlibs;
 
 /**
  *
  * @author smzb
  */
-public class JokerHelper implements IJokerHelper {
-
+public interface IJokerHelper {
     /**
      * Add two INT numbers somehow
-     *
      * @param Num1 Integer 1
      * @param Num2 Integer 2
      * @return Integer with the addition result
      */
-    @Override
-    public int addNumbers(int Num1, int Num2) {
-        return Num1 + Num2;
-    }
-
+    int addNumbers(int Num1, int Num2);
     /**
      * Subtract two INT numbers somehow
-     *
      * @param Num1 Integer 1
      * @param Num2 Integer 2
      * @return Integer with the subtraction result
      */
-    @Override
-    public int subNumbers(int Num1, int Num2) {
-        return Num1 - Num2;
-    }
-
+    int subNumbers(int Num1, int Num2);
     /**
      * Multiply two INT numbers somehow
-     *
      * @param Num1 Integer 1
      * @param Num2 Integer 2
      * @return Integer with the multiplication result
      */
-    @Override
-    public int mulNumbers(int Num1, int Num2) {
-        return Num1 * Num2;
-    }
-
+    int mulNumbers(int Num1, int Num2);
     /**
      * Divide two INT numbers somehow
-     *
      * @param Num1 Integer 1
      * @param Num2 Integer 2
      * @return Integer with the division result
-     * TODO We somehow have to make sure we can't divide by 0
      */
-    @Override
-    public int divNumbers(int Num1, int Num2) {
-        return Num1 / Num2;
-    }
-
+    int divNumbers(int Num1, int Num2);
     /**
      * Add two double numbers somehow
-     *
      * @param Num1 Double 1
      * @param Num2 Double 2
      * @return Double with the addition result
      */
-    @Override
-    public double addNumbers(double Num1, double Num2) {
-        return Num1 + Num2;
-    }
-
+    double addNumbers(double Num1, double Num2);
     /**
      * Subtract two double numbers somehow
-     *
      * @param Num1 Double 1
      * @param Num2 Double 2
      * @return Double with the subtraction result
      */
-    @Override
-    public double subNumbers(double Num1, double Num2) {
-        return Num1 - Num2;
-    }
-
+    double subNumbers(double Num1, double Num2);
     /**
      * Multiply two double numbers somehow
-     *
      * @param Num1 Double 1
      * @param Num2 Double 2
      * @return Double with the multiplication result
      */
-    @Override
-    public double mulNumbers(double Num1, double Num2) {
-        return Num1 * Num2;
-    }
-
+    double mulNumbers(double Num1, double Num2);
     /**
      * Divide two double numbers somehow
-     *
      * @param Num1 Double 1
      * @param Num2 Double 2
      * @return Double with the division result
-     * TODO We somehow have to make sure we can't divide by 0
      */
-    @Override
-    public double divNumbers(double Num1, double Num2) {
-        return Num1 / Num2;
-    }
+    double divNumbers(double Num1, double Num2);
 }
