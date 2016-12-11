@@ -8,12 +8,9 @@ matrix:
   - jdk: oraclejdk8
 script: ant test javadoc jar
 after_success:
-  - mvn -X -e clean org.eluder.coveralls:coveralls-maven-plugin:report
-  - ls -R
-  - echo "Finding XML files"
-  - find . -name "*.xml"
-  - echo "Finding JAR files"
-  - find . -name "*.jar"
+  - mvn clean org.eluder.coveralls:coveralls-maven-plugin:report
+  - echo "Finding XML files\n" && find . -name "*.xml"
+  - echo "Finding JAR files\n" && find . -name "*.jar"
   - printenv
 ## GH_TOKEN=[encrypted github oauth token]
 #env:
