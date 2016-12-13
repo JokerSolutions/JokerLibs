@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package me.mitos_kalandiel.jokerlibs;
+package me.mitoskalandiel.jokerlibs;
 
 /**
  * This Interface defines what functions will be made available.

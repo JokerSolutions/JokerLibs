@@ -14,7 +14,8 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package me.mitos_kalandiel.jokerlibs;
+
+package me.mitoskalandiel.jokerlibs;
 
 import org.junit.After;
 import org.junit.AfterClass;
