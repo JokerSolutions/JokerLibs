@@ -3,7 +3,7 @@ install: true
 matrix:
   include:
   - jdk: oraclejdk8
-script: mvn clean install -DskipTests=false -Dmaven.javadoc.skip=true -B -V
+script: mvn clean verify install -DskipTests=false -Dmaven.javadoc.skip=true -B -V
 ## GH_TOKEN=[encrypted github oauth token]
 env:
   global:
@@ -29,8 +29,8 @@ branches:
   except:
   - "/^*-v[0-9]/"
 addons:
-  code_climate: 
-    repo_token: a4f10636fe11cc70f2e038e4df18abe64b17f1f9609a09b86ee2a7c877ef2a36
+    code_climate:
+        repo_token: 7a567dde1b8f419f2211cafde6349b0cb6ee9cbfadbc321c2d6a2cc7d2f8158f
 cache:                                                                          
   directories:                                                                  
   - $HOME/.m2
