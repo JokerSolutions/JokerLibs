@@ -18,106 +18,106 @@
 package me.mitoskalandiel.jokerlibs;
 
 /**
- *
+ * JokerHelper class.
  * @author smzb
  */
 public class JokerHelper implements IJokerHelper {
 
     /**
-     * Add two INT numbers somehow
+     * Add two INT numbers somehow.
      *
-     * @param Num1 Integer 1
-     * @param Num2 Integer 2
+     * @param intNum1 Integer 1
+     * @param intNum2 Integer 2
      * @return Integer with the addition result
      */
     @Override
-    public int addNumbers(int Num1, int Num2) {
-        return Num1 + Num2;
+    public int addNumbers(int intNum1, int intNum2) {
+        return intNum1 + intNum2;
     }
 
     /**
-     * Subtract two INT numbers somehow
+     * Subtract two INT numbers somehow.
      *
-     * @param Num1 Integer 1
-     * @param Num2 Integer 2
+     * @param intNum1 Integer 1
+     * @param intNum2 Integer 2
      * @return Integer with the subtraction result
      */
     @Override
-    public int subNumbers(int Num1, int Num2) {
-        return Num1 - Num2;
+    public int subNumbers(int intNum1, int intNum2) {
+        return intNum1 - intNum2;
     }
 
     /**
-     * Multiply two INT numbers somehow
+     * Multiply two INT numbers somehow.
      *
-     * @param Num1 Integer 1
-     * @param Num2 Integer 2
+     * @param intNum1 Integer 1
+     * @param intNum2 Integer 2
      * @return Integer with the multiplication result
      */
     @Override
-    public int mulNumbers(int Num1, int Num2) {
-        return Num1 * Num2;
+    public int mulNumbers(int intNum1, int intNum2) {
+        return intNum1 * intNum2;
     }
 
     /**
-     * Divide two INT numbers somehow
+     * Divide two INT numbers somehow.
      *
-     * @param Num1 Integer 1
-     * @param Num2 Integer 2
+     * @param intNum1 Integer 1
+     * @param intNum2 Integer 2
      * @return Integer with the division result
      * TODO We somehow have to make sure we can't divide by 0
      */
     @Override
-    public int divNumbers(int Num1, int Num2) {
-        return Num1 / Num2;
+    public int divNumbers(int intNum1, int intNum2) {
+        return intNum1 / intNum2;
     }
 
     /**
-     * Add two double numbers somehow
+     * Add two double numbers somehow.
      *
-     * @param Num1 Double 1
-     * @param Num2 Double 2
+     * @param intNum1 Double 1
+     * @param intNum2 Double 2
      * @return Double with the addition result
      */
     @Override
-    public double addNumbers(double Num1, double Num2) {
-        return Num1 + Num2;
+    public double addNumbers(double intNum1, double intNum2) {
+        return intNum1 + intNum2;
     }
 
     /**
-     * Subtract two double numbers somehow
+     * Subtract two double numbers somehow.
      *
-     * @param Num1 Double 1
-     * @param Num2 Double 2
+     * @param intNum1 Double 1
+     * @param intNum2 Double 2
      * @return Double with the subtraction result
      */
     @Override
-    public double subNumbers(double Num1, double Num2) {
-        return Num1 - Num2;
+    public double subNumbers(double intNum1, double intNum2) {
+        return intNum1 - intNum2;
     }
 
     /**
-     * Multiply two double numbers somehow
+     * Multiply two double numbers somehow.
      *
-     * @param Num1 Double 1
-     * @param Num2 Double 2
+     * @param intNum1 Double 1
+     * @param intNum2 Double 2
      * @return Double with the multiplication result
      */
     @Override
-    public double mulNumbers(double Num1, double Num2) {
-        return Num1 * Num2;
+    public double mulNumbers(double intNum1, double intNum2) {
+        return intNum1 * intNum2;
     }
 
     /**
-     * Divide two double numbers somehow
+     * Divide two double numbers somehow.
      *
-     * @param Num1 Double 1
-     * @param Num2 Double 2
+     * @param intNum1 Double 1
+     * @param intNum2 Double 2
      * @return Double with the division result
      * TODO We somehow have to make sure we can't divide by 0
      */
     @Override
-    public double divNumbers(double Num1, double Num2) {
-        return Num1 / Num2;
+    public double divNumbers(double intNum1, double intNum2) {
+        return intNum1 / intNum2;
     }
 }

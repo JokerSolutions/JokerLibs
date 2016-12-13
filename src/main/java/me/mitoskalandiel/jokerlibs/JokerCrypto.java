@@ -20,11 +20,16 @@ package me.mitoskalandiel.jokerlibs;
 import java.util.Random;
 
 /**
- *
+ * JokerCrypto class.
  * @author smzb
  */
 public class JokerCrypto implements IJokerCrypto {
     
+    /**
+     * Lets generate a password with a length parameter.
+     * @param length The password length
+     * @return 
+     */
     static char[] generatePassword(int length) {
         String charsCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String chars = "abcdefghijklmnopqrstuvwxyz";
