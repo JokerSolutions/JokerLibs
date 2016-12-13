@@ -96,7 +96,6 @@
                         </goals>
                         <configuration>
                             <rules>
-                                <!--
                                 <rule implementation="org.jacoco.maven.RuleConfiguration">
                                     <element>BUNDLE</element>
                                     <limits>
@@ -113,7 +112,6 @@
                                         </limit>
                                     </limits>
                                 </rule>
-                                -->
                             </rules>
                         </configuration>
                     </execution>
