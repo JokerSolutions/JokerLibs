@@ -17,7 +17,7 @@ after_success:
 - echo "Finding JAR files\n" && find . -name "*.jar"
 - git config --global user.email "builds@travis-ci.com"
 - git config --global user.name "Travis CI"
-- export GIT_TAG=$TRAVIS_BRANCH-0.1.$TRAVIS_BUILD_NUMBER
+- export GIT_TAG=$TRAVIS_BRANCH-v1.0.$TRAVIS_BUILD_NUMBER
 - printenv
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
 #- git push -q https://${GH_TOKEN}@github.com/mitoskalandiel/JokerLibs.git --tags
