@@ -26,15 +26,15 @@ import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 
 /**
- *
+ * Lets set up tests for the JokerHelper
  * @author smzb
  */
 public class JokerHelperTest {
     
-    private int IntNum1;
-    private int IntNum2;
-    private double DblNum1;
-    private double DblNum2;
+    private int intNum1;
+    private int intNum2;
+    private double dblNum1;
+    private double dblNum2;
     
     /**
      *
@@ -61,10 +61,10 @@ public class JokerHelperTest {
      */
     @Before
     public void setUp() {
-        IntNum1 = 5;
-        IntNum2 = 6;
-        DblNum1 = 5.3;
-        DblNum2 = 2;
+        intNum1 = 5;
+        intNum2 = 6;
+        dblNum1 = 5.3;
+        dblNum2 = 2;
     }
     
     /**
@@ -82,7 +82,7 @@ public class JokerHelperTest {
         System.out.println("Test:addNumbers(int)");
         JokerHelper instance = new JokerHelper();
         int expected = 11;
-        int result = instance.addNumbers(IntNum1, IntNum2);
+        int result = instance.addNumbers(intNum1, intNum2);
         assertThat(expected, is(equalTo(result)));
     }
 
@@ -94,7 +94,7 @@ public class JokerHelperTest {
         System.out.println("Test:subNumbers(int)");
         JokerHelper instance = new JokerHelper();
         int expected = -1;
-        int result = instance.subNumbers(IntNum1, IntNum2);
+        int result = instance.subNumbers(intNum1, intNum2);
         assertThat(expected, is(equalTo(result)));
     }
 
@@ -106,7 +106,7 @@ public class JokerHelperTest {
         System.out.println("Test:mulNumbers(int)");
         JokerHelper instance = new JokerHelper();
         int expected = 30;
-        int result = instance.mulNumbers(IntNum1, IntNum2);
+        int result = instance.mulNumbers(intNum1, intNum2);
         assertThat(expected, is(equalTo(result)));
     }
 
@@ -133,7 +133,7 @@ public class JokerHelperTest {
         System.out.println("Test:addNumbers(double)");
         JokerHelper instance = new JokerHelper();
         double expected = 7.3;
-        double result = instance.addNumbers(DblNum1, DblNum2);
+        double result = instance.addNumbers(dblNum1, dblNum2);
         assertThat(expected, is(equalTo(result)));
     }
 
@@ -145,7 +145,7 @@ public class JokerHelperTest {
         System.out.println("Test:subNumbers(double)");
         JokerHelper instance = new JokerHelper();
         double expected = 3.3;
-        double result = instance.subNumbers(DblNum1, DblNum2);
+        double result = instance.subNumbers(dblNum1, dblNum2);
         assertThat(expected, is(equalTo(result)));
     }
 
@@ -157,7 +157,7 @@ public class JokerHelperTest {
         System.out.println("Test:mulNumbers(double)");
         JokerHelper instance = new JokerHelper();
         double expected = 10.6;
-        double result = instance.mulNumbers(DblNum1, DblNum2);
+        double result = instance.mulNumbers(dblNum1, dblNum2);
         assertThat(expected, is(equalTo(result)));
     }
 
@@ -169,7 +169,7 @@ public class JokerHelperTest {
         System.out.println("Test:divNumbers(double)");
         JokerHelper instance = new JokerHelper();
         double expected = 2.65;
-        double result = instance.divNumbers(DblNum1, DblNum2);
+        double result = instance.divNumbers(dblNum1, dblNum2);
         assertThat(expected, is(equalTo(result)));
     }
     
@@ -180,7 +180,7 @@ public class JokerHelperTest {
     public void testDivideByZero_int_int() {
         System.out.println("Test:divByZero(int)");
         JokerHelper instance = new JokerHelper();
-        double result = instance.divNumbers(IntNum1, 0);
+        double result = instance.divNumbers(intNum1, 0);
     }
     
     /**
@@ -191,7 +191,7 @@ public class JokerHelperTest {
         System.out.println("Test:divByZero(double)");
         JokerHelper instance = new JokerHelper();
         double expected = Double.POSITIVE_INFINITY;
-        double result = instance.divNumbers(DblNum1, 0);
+        double result = instance.divNumbers(dblNum1, 0);
         assertThat(expected, is(equalTo(result)));
     }
 

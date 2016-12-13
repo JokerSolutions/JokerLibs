@@ -27,7 +27,7 @@ import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 
 /**
- *
+ * Set up tests for the cryptography.
  * @author smzb
  */
 public class JokerCryptoTest {
