@@ -39,6 +39,7 @@
                             <propertyName>surefireArgLine</propertyName>
                         </configuration>
                     </execution>
+                    
                     <!--
                         Prepares the property pointing to the JaCoCo runtime agent which
                         is passed as VM argument when Maven the Failsafe plugin is executed.
@@ -63,6 +64,13 @@
                         Ensures that the code coverage report for integration tests after
                         integration tests have been run.
                     -->
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
                     <execution>
                         <id>post-integration-test</id>
                         <phase>post-integration-test</phase>
