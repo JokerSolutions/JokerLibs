@@ -23,7 +23,7 @@ import java.util.Random;
  * JokerCrypto class.
  * @author smzb
  */
-public class JokerCrypto implements IJokerCrypto {
+public class JokerCrypto {
     
     /**
      * Lets generate a password with a length parameter.
