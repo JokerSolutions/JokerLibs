@@ -17,11 +17,36 @@
 
 package me.mitoskalandiel.jokerlibs;
 
+import java.util.Random;
+
 /**
  * This Interface defines what functions will be made available.
  * @author smzb
  */
 
 public interface IJokerCrypto {
+    
+    /**
+     *
+     * @param length
+     * @return
+     */
+    static char[] generatePassword(int length) {
+        String charsCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String chars = "abcdefghijklmnopqrstuvwxyz";
+        String numbers = "0123456789";
+        String symbols = "!£$%^&*()_+-=][}{#';~@:?></.,";
+
+        String passSymbols = charsCaps + chars + numbers + symbols;
+        Random rnd = new Random();
+
+        char[] password = new char[length];
+
+        for (int i=0; i<length; i++) {
+            password[i] = passSymbols.charAt(rnd.nextInt(passSymbols.length()));
+        }
+
+        return password;
+    }
 
 }
