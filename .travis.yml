@@ -11,7 +11,7 @@ env:
 after_success:
 - mvn org.eluder.coveralls:coveralls-maven-plugin:report
 - git config --global user.email "build-bot@mitos-kalandiel.me"
-- git config --global user.name "mitos[dash]kalandiel :: Travis CI"
+- git config --global user.name "mitos[dash]kalandiel - Travis CI"
 - export GIT_TAG=$TRAVIS_BRANCH-v1.0.$TRAVIS_BUILD_NUMBER
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
 - git push https://${GH_TOKEN}:x-oauth-basic@github.com/mitoskalandiel/JokerLibs.git --tags
