@@ -30,7 +30,7 @@ public class JokerCrypto {
      * @param length The password length
      * @return 
      */
-    static char[] generatePassword(int length) {
+    public static char[] generatePassword(int length) {
         String charsCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String chars = "abcdefghijklmnopqrstuvwxyz";
         String numbers = "0123456789";
