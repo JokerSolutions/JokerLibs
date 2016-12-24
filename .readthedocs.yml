@@ -1,0 +1,4 @@
+requirements_file: rtfd-requirements.txt
+formats:
+    - epub
+    - pdf
