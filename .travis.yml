@@ -14,14 +14,14 @@ after_success:
 - git config --global user.name "mitos[dash]kalandiel - Travis CI"
 - export GIT_TAG=$TRAVIS_BRANCH-v1.0.$TRAVIS_BUILD_NUMBER
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-- git push https://${GH_TOKEN}:x-oauth-basic@github.com/mitoskalandiel/JokerLibs.git --tags
+- git push https://${GH_TOKEN}:x-oauth-basic@github.com/JokerSolutions/JokerLibs.git --tags
 deploy:
   provider: releases
   skip_cleanup: true
   api-key:
     secure: gQW32J0yJzSgX4Yz1hqQOhesoRCN/KLtMO3vGHBe3yFrO3YhtlpGLze6JP+uYrTvAltzLe/9E1y0tYwnYjXa1LyiWjLxGJMrKpaCbrLYTRQVJ0VhOaBtEfGWZIior5o3dVj8IrDm0oniqBG/jcjgCHQ0W3A/EDtIs3JLj3Zv9dbMJHnBGkunHUCQnRilR1DczWFjKmI4GXJtSepU9v1uVmlbiZuS2D27DNiyO8VIvLeDaAGchI2ozeMbRo0qnblFcR+0HwDgQEL4GHS7/4C1OdO6rEVMmvzOHb3KTJPlsc9BERbhDMsAwqtzLwwsHJ3TuiUVaJbxQ5Kc9ytAo1kWUlTxdQ+k/3nOmfAJcHIgm0lUUx4NaOP3C+8AlYZmkpXGHnjVuIbEUO+R7MruAlB5z6LC122wACESNcOn+/74HOIhnYtwP/sU8zOYuLOplTBqqHeyinaJXZMDgUI7/NXeANgS6x5/qlv/5DV8epMEorN7d/oEVLFiMzk0xk0tuw595TKXio3OFCjcjNqRLhwGbcnNHYbYVHLS2Bba5zblzEIHJMIjY00uqI2HXs/mPa6y5+3wJl4+swyeAqfZN8z8rDj7MA5GxppwKRT6xD7uXue67gEk9gHGnDqpy9pCgufOTw3P1WppvSLZCncrbPZ+g3BUUhK8AmPVDwBt/cclwco=
   file:
-  - target/JokerLibs-v1.0.jar
+  - target/JokerLibs-v1.1-SNAPSHOT.jar
   on:
     tags: false
     all_branches: true
