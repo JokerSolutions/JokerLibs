@@ -35,7 +35,7 @@ extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.coverage',
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
-    'sphinx.ext.githubpages',
+#    'sphinx.ext.githubpages',
     'javasphinx']
 
 # Add any paths that contain templates here, relative to this directory.
