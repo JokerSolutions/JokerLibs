@@ -13,10 +13,9 @@ after_success:
 - mvn org.eluder.coveralls:coveralls-maven-plugin:report
 - git config --global user.email "build-bot@mitos-kalandiel.me"
 - git config --global user.name "mitos[dash]kalandiel - Travis CI"
-- export GIT_TAG=$TRAVIS_BRANCH-v1.0.$TRAVIS_BUILD_NUMBER
+- export GIT_TAG=$TRAVIS_BRANCH-v1.1.$TRAVIS_BUILD_NUMBER
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-- git push https://${GH_TOKEN}:x-oauth-basic@github.com/JokerSolutions/JokerLibs.git
-  --tags
+- git push https://${GH_TOKEN}:x-oauth-basic@github.com/JokerSolutions/JokerLibs.git --tags
 deploy:
   provider: releases
   skip_cleanup: true
