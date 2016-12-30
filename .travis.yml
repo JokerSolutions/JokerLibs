@@ -31,8 +31,9 @@ branches:
   - "/^*-v[0-9]/"
 addons:
   srcclr: true
-  code_climate:
-    repo_token: 3dbb50588aa9e89b5cad32225753ac6fd1d513684ca2bfbd57a32c0abd2976f0
+addons:
+    code_climate:
+        repo_token: 3dbb50588aa9e89b5cad32225753ac6fd1d513684ca2bfbd57a32c0abd2976f0
 cache:
   directories:
   - "$HOME/.m2"
