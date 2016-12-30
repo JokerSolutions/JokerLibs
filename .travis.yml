@@ -34,12 +34,12 @@ addons:
 addons:
     code_climate:
         repo_token: 3dbb50588aa9e89b5cad32225753ac6fd1d513684ca2bfbd57a32c0abd2976f0
-cache:
-  directories:
-  - "$HOME/.m2"
+#cache:
+#  directories:
+#  - "$HOME/.m2"
 notifications:
   webhooks:
-    urls: https://webhooks.gitter.im/e/745854044d87f08a64db
+    urls: https://webhooks.gitter.im/e/ffc39376dc55eb15eb39
     on_success: always  # options: [always|never|change] default: always
     on_failure: always  # options: [always|never|change] default: always
     on_start: never     # options: [always|never|change] default: always
