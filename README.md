@@ -9,7 +9,6 @@ Joker Solutions Java Libraries (these are just some basic helper functions)
 |                            	|                                                               Automated Code Review and Code Quality                                                              	|
 |:--------------------------:	|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
 |        Code Climate        	|         [![Code Climate](https://codeclimate.com/github/JokerSolutions/JokerLibs/badges/gpa.svg)](https://codeclimate.com/github/JokerSolutions/JokerLibs)        	|
-| Code Climate Test Coverage 	| [![Test Coverage](https://codeclimate.com/github/JokerSolutions/JokerLibs/badges/coverage.svg)](https://codeclimate.com/github/JokerSolutions/JokerLibs/coverage) 	|
 |     Code Climate Issues    	|     [![Issue Count](https://codeclimate.com/github/JokerSolutions/JokerLibs/badges/issue_count.svg)](https://codeclimate.com/github/JokerSolutions/JokerLibs)     	|
 
 |                            	|                                                               Java Documentation                                                              	|

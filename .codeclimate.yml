@@ -12,3 +12,4 @@ ratings:
   - "**.java"
 exclude_paths:
 - target/
+- docs/
