@@ -27,10 +27,10 @@ import java.util.concurrent.ThreadLocalRandom;
 public class JokerCrypto {
     
     /**
-     *
-     * @param l
-     * @param h
-     * @return
+     * Let's generate a Random Number between l and h
+     * @param l Low value for minimum random value
+     * @param h High value for random value
+     * @return int of random number between (l)ow and (h)igh
      */
     public static int randomInt(int l, int h) {
         int result = ThreadLocalRandom.current().nextInt(l, h + 1);
@@ -40,7 +40,7 @@ public class JokerCrypto {
     /**
      * Lets generate a password with a length parameter.
      * @param length The password length
-     * @return 
+     * @return String of random password of n length
      */
     public static char[] generatePassword(int length) {
         String charsCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
