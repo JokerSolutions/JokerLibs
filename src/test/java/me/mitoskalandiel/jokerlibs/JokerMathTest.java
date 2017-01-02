@@ -26,10 +26,10 @@ import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 
 /**
- * Lets set up tests for the JokerHelper
+ * Lets set up tests for the JokerMath
  * @author smzb
  */
-public class JokerHelperTest {
+public class JokerMathTest {
     
     private int intNum1;
     private int intNum2;
@@ -39,7 +39,7 @@ public class JokerHelperTest {
     /**
      *
      */
-    public JokerHelperTest() {
+    public JokerMathTest() {
     }
     
     /**
@@ -75,43 +75,43 @@ public class JokerHelperTest {
     }
 
     /**
-     * Test of addNumbers method, of class JokerHelper.
+     * Test of addNumbers method, of class JokerMath.
      */
     @Test
     public void testAddNumbers_int_int() {
         System.out.println("Test:addNumbers(int)");
-        JokerHelper instance = new JokerHelper();
+        JokerMath instance = new JokerMath();
         int expected = 11;
         int result = instance.addNumbers(intNum1, intNum2);
         assertThat(expected, is(equalTo(result)));
     }
 
     /**
-     * Test of subNumbers method, of class JokerHelper.
+     * Test of subNumbers method, of class JokerMath.
      */
     @Test
     public void testSubNumbers_int_int() {
         System.out.println("Test:subNumbers(int)");
-        JokerHelper instance = new JokerHelper();
+        JokerMath instance = new JokerMath();
         int expected = -1;
         int result = instance.subNumbers(intNum1, intNum2);
         assertThat(expected, is(equalTo(result)));
     }
 
     /**
-     * Test of mulNumbers method, of class JokerHelper.
+     * Test of mulNumbers method, of class JokerMath.
      */
     @Test
     public void testMulNumbers_int_int() {
         System.out.println("Test:mulNumbers(int)");
-        JokerHelper instance = new JokerHelper();
+        JokerMath instance = new JokerMath();
         int expected = 30;
         int result = instance.mulNumbers(intNum1, intNum2);
         assertThat(expected, is(equalTo(result)));
     }
 
     /**
-     * Test of divNumbers method, of class JokerHelper.
+     * Test of divNumbers method, of class JokerMath.
      * TODO come up with a good test for division
      */
     @Test
@@ -119,55 +119,55 @@ public class JokerHelperTest {
         System.out.println("Test:divNumbers(int)");
         int Num1 = 0;
         int Num2 = 1;
-        JokerHelper instance = new JokerHelper();
+        JokerMath instance = new JokerMath();
         int expected = 0;
         int result = instance.divNumbers(Num1, Num2);
         assertThat(expected, is(equalTo(result)));
     }
 
     /**
-     * Test of addNumbers method, of class JokerHelper.
+     * Test of addNumbers method, of class JokerMath.
      */
     @Test
     public void testAddNumbers_double_double() {
         System.out.println("Test:addNumbers(double)");
-        JokerHelper instance = new JokerHelper();
+        JokerMath instance = new JokerMath();
         double expected = 7.3;
         double result = instance.addNumbers(dblNum1, dblNum2);
         assertThat(expected, is(equalTo(result)));
     }
 
     /**
-     * Test of subNumbers method, of class JokerHelper.
+     * Test of subNumbers method, of class JokerMath.
      */
     @Test
     public void testSubNumbers_double_double() {
         System.out.println("Test:subNumbers(double)");
-        JokerHelper instance = new JokerHelper();
+        JokerMath instance = new JokerMath();
         double expected = 3.3;
         double result = instance.subNumbers(dblNum1, dblNum2);
         assertThat(expected, is(equalTo(result)));
     }
 
     /**
-     * Test of mulNumbers method, of class JokerHelper.
+     * Test of mulNumbers method, of class JokerMath.
      */
     @Test
     public void testMulNumbers_double_double() {
         System.out.println("Test:mulNumbers(double)");
-        JokerHelper instance = new JokerHelper();
+        JokerMath instance = new JokerMath();
         double expected = 10.6;
         double result = instance.mulNumbers(dblNum1, dblNum2);
         assertThat(expected, is(equalTo(result)));
     }
 
     /**
-     * Test of divNumbers method, of class JokerHelper.
+     * Test of divNumbers method, of class JokerMath.
      */
     @Test
     public void testDivNumbers_double_double() {
         System.out.println("Test:divNumbers(double)");
-        JokerHelper instance = new JokerHelper();
+        JokerMath instance = new JokerMath();
         double expected = 2.65;
         double result = instance.divNumbers(dblNum1, dblNum2);
         assertThat(expected, is(equalTo(result)));
@@ -179,7 +179,7 @@ public class JokerHelperTest {
     @Test(expected=java.lang.ArithmeticException.class)
     public void testDivideByZero_int_int() {
         System.out.println("Test:divByZero(int)");
-        JokerHelper instance = new JokerHelper();
+        JokerMath instance = new JokerMath();
         double result = instance.divNumbers(intNum1, 0);
     }
     
@@ -189,7 +189,7 @@ public class JokerHelperTest {
     @Test
     public void testDivideByZero_double_double() {
         System.out.println("Test:divByZero(double)");
-        JokerHelper instance = new JokerHelper();
+        JokerMath instance = new JokerMath();
         double expected = Double.POSITIVE_INFINITY;
         double result = instance.divNumbers(dblNum1, 0);
         assertThat(expected, is(equalTo(result)));

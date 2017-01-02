@@ -18,10 +18,10 @@
 package me.mitoskalandiel.jokerlibs;
 
 /**
- * JokerHelper class.
+ * JokerMath class.
  * @author smzb
  */
-public class JokerHelper implements IJokerHelper {
+public class JokerMath implements IJokerMath {
 
     /**
      * Add two INT numbers somehow.

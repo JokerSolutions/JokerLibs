@@ -18,12 +18,24 @@
 package me.mitoskalandiel.jokerlibs;
 
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * JokerCrypto class.
  * @author smzb
  */
 public class JokerCrypto {
+    
+    /**
+     *
+     * @param l
+     * @param h
+     * @return
+     */
+    public static int randomInt(int l, int h) {
+        int result = ThreadLocalRandom.current().nextInt(l, h + 1);
+        return result;
+    }
     
     /**
      * Lets generate a password with a length parameter.

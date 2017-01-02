@@ -21,7 +21,7 @@ package me.mitoskalandiel.jokerlibs;
  *
  * @author smzb
  */
-public interface IJokerHelper {
+public interface IJokerMath {
     /**
      * Add two INT numbers somehow
      * @param Num1 Integer 1
