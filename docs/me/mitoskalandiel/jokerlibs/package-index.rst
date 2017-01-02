@@ -6,9 +6,9 @@ me.mitoskalandiel.jokerlibs
 .. toctree::
    :maxdepth: 1
 
-   IJokerHelper
+   IJokerMath
    JokerCrypto
    JokerCryptoTest
-   JokerHelper
-   JokerHelperTest
+   JokerMath
+   JokerMathTest
 

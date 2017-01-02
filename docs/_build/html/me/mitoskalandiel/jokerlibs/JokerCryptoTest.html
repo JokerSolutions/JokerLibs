@@ -60,6 +60,25 @@ public class <code class="descname">JokerCryptoTest</code><a class="headerlink" 
 </table>
 </dd></dl>
 
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="maxit">
+<h3>MAXIT<a class="headerlink" href="#maxit" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="me.mitoskalandiel.jokerlibs.JokerCryptoTest.MAXIT">
+public static final int <code class="descname">MAXIT</code><a class="headerlink" href="#me.mitoskalandiel.jokerlibs.JokerCryptoTest.MAXIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="minit">
+<h3>MINIT<a class="headerlink" href="#minit" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="me.mitoskalandiel.jokerlibs.JokerCryptoTest.MINIT">
+public static final int <code class="descname">MINIT</code><a class="headerlink" href="#me.mitoskalandiel.jokerlibs.JokerCryptoTest.MINIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
 <div class="section" id="constructors">
 <h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id1">
@@ -73,6 +92,44 @@ public <code class="descname">JokerCryptoTest</code><span class="sig-paren">(</s
 </div>
 <div class="section" id="methods">
 <h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="getfrequencies">
+<h3>getFrequencies<a class="headerlink" href="#getfrequencies" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="me.mitoskalandiel.jokerlibs.JokerCryptoTest.getFrequencies(ArrayList)">
+static <a class="reference external" href="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html" title="java.util.Map">Map</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html" title="java.lang.Number">Number</a>, <a class="reference external" href="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html" title="java.lang.Integer">Integer</a>&gt; <code class="descname">getFrequencies</code><span class="sig-paren">(</span><a class="reference external" href="http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html" title="java.util.ArrayList">ArrayList</a>&lt;? extends <a class="reference external" href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html" title="java.lang.Number">Number</a>&gt;<em> nums</em><span class="sig-paren">)</span><a class="headerlink" href="#me.mitoskalandiel.jokerlibs.JokerCryptoTest.getFrequencies(ArrayList)" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>nums</strong> &#8211; an array of integers</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a Map, key being the number and value its frequency</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="israndom">
+<h3>isRandom<a class="headerlink" href="#israndom" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="me.mitoskalandiel.jokerlibs.JokerCryptoTest.isRandom(ArrayList, int)">
+static boolean <code class="descname">isRandom</code><span class="sig-paren">(</span><a class="reference external" href="http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html" title="java.util.ArrayList">ArrayList</a>&lt;? extends <a class="reference external" href="http://docs.oracle.com/javase/6/docs/api/java/lang/Number.html" title="java.lang.Number">Number</a>&gt;<em> randomNums</em>, int<em> r</em><span class="sig-paren">)</span><a class="headerlink" href="#me.mitoskalandiel.jokerlibs.JokerCryptoTest.isRandom(ArrayList, int)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="randomnumbersrun">
+<h3>randomNumbersRun<a class="headerlink" href="#randomnumbersrun" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="me.mitoskalandiel.jokerlibs.JokerCryptoTest.randomNumbersRun()">
+ boolean <code class="descname">randomNumbersRun</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#me.mitoskalandiel.jokerlibs.JokerCryptoTest.randomNumbersRun()" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
 <div class="section" id="setup">
 <h3>setUp<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h3>
 <dl class="method">
@@ -114,6 +171,15 @@ public void <code class="descname">testGeneratePassword</code><span class="sig-p
 </dd></dl>
 
 </div>
+<div class="section" id="testrandomint">
+<h3>testRandomInt<a class="headerlink" href="#testrandomint" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="me.mitoskalandiel.jokerlibs.JokerCryptoTest.testRandomInt()">
+public void <code class="descname">testRandomInt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#me.mitoskalandiel.jokerlibs.JokerCryptoTest.testRandomInt()" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test of randomInt method, of class JokerCrypto.</p>
+</dd></dl>
+
+</div>
 </div>
 </div>
 
@@ -126,16 +192,25 @@ public void <code class="descname">testGeneratePassword</code><span class="sig-p
   <h3><a href="../../../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">JokerCryptoTest</a><ul>
+<li><a class="reference internal" href="#fields">Fields</a><ul>
+<li><a class="reference internal" href="#maxit">MAXIT</a></li>
+<li><a class="reference internal" href="#minit">MINIT</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#constructors">Constructors</a><ul>
 <li><a class="reference internal" href="#id1">JokerCryptoTest</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#methods">Methods</a><ul>
+<li><a class="reference internal" href="#getfrequencies">getFrequencies</a></li>
+<li><a class="reference internal" href="#israndom">isRandom</a></li>
+<li><a class="reference internal" href="#randomnumbersrun">randomNumbersRun</a></li>
 <li><a class="reference internal" href="#setup">setUp</a></li>
 <li><a class="reference internal" href="#setupclass">setUpClass</a></li>
 <li><a class="reference internal" href="#teardown">tearDown</a></li>
 <li><a class="reference internal" href="#teardownclass">tearDownClass</a></li>
 <li><a class="reference internal" href="#testgeneratepassword">testGeneratePassword</a></li>
+<li><a class="reference internal" href="#testrandomint">testRandomInt</a></li>
 </ul>
 </li>
 </ul>

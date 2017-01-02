@@ -86,7 +86,8 @@ todo_include_todos = True
 import os
 on_rtd = os.environ.get('READTHEDOCS') == 'True'
 if on_rtd:
-    html_theme = 'sphinx_rtd_theme'
+    #html_theme = 'sphinx_rtd_theme'
+    html_theme = 'nature'
 else:
     html_theme = 'nature'
 # -- Options for HTML output ----------------------------------------------
